@@ -1,6 +1,6 @@
 {
   "name": "Mit Første Addon",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "slug": "my_addon",
   "description": "En simpel addon til demo",
   "arch": ["armv7", "aarch64", "amd64", "i386"],
