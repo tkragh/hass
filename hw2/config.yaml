@@ -1,0 +1,17 @@
+name: "Hello World Addon"
+version: "1.0.0"
+slug: "hello_world"
+description: "Et simpelt addon der skriver en hilsen"
+arch:
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: services
+boot: auto
+options:
+  user_name: "Nybegynder"
+  loop_delay: 10
+schema:
+  user_name: str
+  loop_delay: int
