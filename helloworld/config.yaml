@@ -1,0 +1,21 @@
+name: "Mit Første Addon"
+version: "1.0.3"
+slug: "my_addon"
+description: "En simpel addon med environment variabler"
+arch:
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: "services"
+boot: "auto"
+map:
+  - config
+ports:
+  "8080/tcp": 8080
+options:
+  greeting: "Hej verden"
+schema:
+  greeting: "str"
+environment:
+  GREETING: "{{ options.greeting }}"
