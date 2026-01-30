@@ -1,8 +1,14 @@
-FROM alpine:3.18
+# Vi bruger HA's officielle base image i stedet for ren alpine
+ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:latest
+FROM $BUILD_FROM
 
-RUN apk add --no-cache bash curl
+# Du behøver ikke installere bash, det er der allerede. 
+# Men du kan beholde curl, hvis du skal bruge det.
+RUN apk add --no-cache curl
 
-COPY run.sh /run.sh
+# Kopier dit script
+COPY run.sh /
 RUN chmod a+x /run.sh
 
+# Start scriptet
 CMD [ "/run.sh" ]
