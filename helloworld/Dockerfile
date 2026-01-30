@@ -11,4 +11,5 @@ COPY run.sh /
 RUN chmod a+x /run.sh
 
 # Start scriptet
+ENTRYPOINT [ "/init" ]
 CMD [ "/run.sh" ]
