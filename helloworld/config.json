@@ -1,6 +1,6 @@
 {
   "name": "Mit Første Addon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "slug": "my_addon",
   "description": "En simpel addon til demo",
   "arch": ["armv7", "aarch64", "amd64", "i386"],
@@ -14,6 +14,6 @@
     "greeting": "str"
   }, 
   "environment": {
-    "GREETING": "greeting"
+    "GREETING": "options.greeting"
   }
 }
