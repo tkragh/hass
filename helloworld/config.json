@@ -1,0 +1,16 @@
+{
+  "name": "Mit Første Addon",
+  "version": "1.0.0",
+  "slug": "my_addon",
+  "description": "En simpel addon til demo",
+  "arch": ["armv7", "aarch64", "amd64", "i386"],
+  "startup": "services",
+  "boot": "auto",
+  "map": ["config"],
+  "options": {
+    "greeting": "Hej verden"
+  },
+  "schema": {
+    "greeting": "str"
+  }
+}
