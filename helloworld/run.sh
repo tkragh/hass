@@ -1,8 +1,4 @@
-#!/usr/bin/env bash
-GREETING=$(jq --raw-output '.greeting' /data/options.json)
-echo "Addon starter..."
-echo "Brugerens greeting: ${GREETING}"
+#!/usr/bin/with-contenv bashio
 
-while true; do
-  sleep 60
-done
+NAME=$(bashio::config 'greeting')
+bashio::log.info "Hilsen fra Bashio: $NAME"
