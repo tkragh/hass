@@ -12,8 +12,5 @@
   },
   "schema": {
     "greeting": "str"
-  }, 
-  "environment": {
-    "GREETING": options.greeting
   }
 }
