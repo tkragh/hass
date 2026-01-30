@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bashio
 
+echo "Nu kører vi korrekt!"
+
 # Hent indstillinger fra config.json via bashio
 NAME=$(bashio::config 'user_name')
 DELAY=$(bashio::config 'loop_delay')

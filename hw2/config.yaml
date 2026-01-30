@@ -1,5 +1,5 @@
 name: "Hello World Addon"
-version: "1.0.1"
+version: "1.0.2"
 slug: "hello_world"
 description: "Et simpelt addon der skriver en hilsen"
 arch:
